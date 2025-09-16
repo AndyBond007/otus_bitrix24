@@ -1,5 +1,6 @@
 /bitrix/
 /upload/
 /vendor/
-**/*.log
 /local/log/
+**/*.log
+
