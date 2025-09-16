@@ -1,0 +1,5 @@
+OTUS: 2025-09-16 12:07:24 - Host: 192.168.0.111:80 - UNCAUGHT_EXCEPTION - [DivisionByZeroError] 
+Division by zero (0)
+/home/bitrix/www/otus/simpleex.php:6
+----------
+
