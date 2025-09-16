@@ -2,3 +2,4 @@
 /upload/
 /vendor/
 **/*.log
+/local/log/
