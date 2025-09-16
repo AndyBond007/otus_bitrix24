@@ -1,0 +1,633 @@
+OTUS: 2025-09-16 14:34:01 - Host:  - UNCAUGHT_EXCEPTION - [Error] 
+Failed opening required '/home/bitrix/www/local/php_interface/../MyLog.php' (include_path='.:/usr/share/pear:/usr/share/php') (0)
+/home/bitrix/www/local/php_interface/init.php:3
+#0: include_once
+	/home/bitrix/www/bitrix/modules/main/include.php:1
+#1: require_once(string)
+	/home/bitrix/www/bitrix/modules/main/include/prolog_before.php:19
+#2: require(string)
+	/home/bitrix/www/bitrix/modules/main/tools/cron_events.php:11
+----------
+
+OTUS: 2025-09-16 14:35:03 - Host:  - UNCAUGHT_EXCEPTION - [Error] 
+Failed opening required '/home/bitrix/www/local/php_interface/../MyLog.php' (include_path='.:/usr/share/pear:/usr/share/php') (0)
+/home/bitrix/www/local/php_interface/init.php:3
+#0: include_once
+	/home/bitrix/www/bitrix/modules/main/include.php:1
+#1: require_once(string)
+	/home/bitrix/www/bitrix/modules/main/include/prolog_before.php:19
+#2: require(string)
+	/home/bitrix/www/bitrix/modules/main/tools/cron_events.php:11
+----------
+
+OTUS: 2025-09-16 14:35:32 - Host: 192.168.0.111:80 - UNCAUGHT_EXCEPTION - [Error] 
+Failed opening required '/home/bitrix/www/local/php_interface/../MyLog.php' (include_path='.:/usr/share/pear:/usr/share/php') (0)
+/home/bitrix/www/local/php_interface/init.php:3
+#0: include_once
+	/home/bitrix/www/bitrix/modules/main/include.php:1
+#1: require_once(string)
+	/home/bitrix/www/bitrix/modules/main/include/prolog_before.php:19
+#2: require_once(string)
+	/home/bitrix/www/bitrix/modules/main/public/session.php:8
+#3: require(string)
+	/home/bitrix/www/bitrix/tools/public_session.php:1
+----------
+
+OTUS: 2025-09-16 14:35:32 - Host: 192.168.0.111:80 - UNCAUGHT_EXCEPTION - [Error] 
+Failed opening required '/home/bitrix/www/local/php_interface/../MyLog.php' (include_path='.:/usr/share/pear:/usr/share/php') (0)
+/home/bitrix/www/local/php_interface/init.php:3
+#0: include_once
+	/home/bitrix/www/bitrix/modules/main/include.php:1
+#1: require_once(string)
+	/home/bitrix/www/bitrix/modules/main/include/prolog_before.php:19
+#2: require_once(string)
+	/home/bitrix/www/bitrix/modules/main/include/prolog.php:10
+#3: require_once(string)
+	/home/bitrix/www/bitrix/header.php:1
+#4: require_once(string)
+	/home/bitrix/www/otus/debug.php:2
+----------
+
+OTUS: 2025-09-16 14:36:03 - Host:  - UNCAUGHT_EXCEPTION - [Error] 
+Failed opening required '/home/bitrix/www/local/php_interface/../MyLog.php' (include_path='.:/usr/share/pear:/usr/share/php') (0)
+/home/bitrix/www/local/php_interface/init.php:3
+#0: include_once
+	/home/bitrix/www/bitrix/modules/main/include.php:1
+#1: require_once(string)
+	/home/bitrix/www/bitrix/modules/main/include/prolog_before.php:19
+#2: require(string)
+	/home/bitrix/www/bitrix/modules/main/tools/cron_events.php:11
+----------
+
+OTUS: 2025-09-16 14:36:15 - Host: 192.168.0.111:80 - UNCAUGHT_EXCEPTION - [Error] 
+Failed opening required '/home/bitrix/www/local/php_interface/../MyLog.php' (include_path='.:/usr/share/pear:/usr/share/php') (0)
+/home/bitrix/www/local/php_interface/init.php:3
+#0: include_once
+	/home/bitrix/www/bitrix/modules/main/include.php:1
+#1: require_once(string)
+	/home/bitrix/www/bitrix/modules/main/include/prolog_before.php:19
+#2: require_once(string)
+	/home/bitrix/www/bitrix/modules/main/include/prolog.php:10
+#3: require_once(string)
+	/home/bitrix/www/bitrix/header.php:1
+#4: require_once(string)
+	/home/bitrix/www/otus/debug.php:2
+----------
+
+OTUS: 2025-09-16 14:36:36 - Host: 192.168.0.111:80 - UNCAUGHT_EXCEPTION - [Error] 
+Failed opening required '/home/bitrix/www/local/php_interface/../MyLog.php' (include_path='.:/usr/share/pear:/usr/share/php') (0)
+/home/bitrix/www/local/php_interface/init.php:3
+#0: include_once
+	/home/bitrix/www/bitrix/modules/main/include.php:1
+#1: require_once(string)
+	/home/bitrix/www/bitrix/modules/main/include/prolog_before.php:19
+#2: require_once(string)
+	/home/bitrix/www/bitrix/modules/main/include/prolog.php:10
+#3: require_once(string)
+	/home/bitrix/www/bitrix/header.php:1
+#4: require_once(string)
+	/home/bitrix/www/otus/debug.php:2
+----------
+
+OTUS: 2025-09-16 14:37:00 - Host: 192.168.0.111:80 - UNCAUGHT_EXCEPTION - [Error] 
+Failed opening required '/home/bitrix/www/local/php_interface/../MyLog.php' (include_path='.:/usr/share/pear:/usr/share/php') (0)
+/home/bitrix/www/local/php_interface/init.php:3
+#0: include_once
+	/home/bitrix/www/bitrix/modules/main/include.php:1
+#1: require_once(string)
+	/home/bitrix/www/bitrix/modules/main/include/prolog_before.php:19
+#2: require_once(string)
+	/home/bitrix/www/bitrix/modules/main/include/prolog.php:10
+#3: require_once(string)
+	/home/bitrix/www/bitrix/header.php:1
+#4: require_once(string)
+	/home/bitrix/www/otus/debug.php:2
+----------
+
+OTUS: 2025-09-16 14:37:03 - Host:  - UNCAUGHT_EXCEPTION - [Error] 
+Failed opening required '/home/bitrix/www/local/php_interface/../MyLog.php' (include_path='.:/usr/share/pear:/usr/share/php') (0)
+/home/bitrix/www/local/php_interface/init.php:3
+#0: include_once
+	/home/bitrix/www/bitrix/modules/main/include.php:1
+#1: require_once(string)
+	/home/bitrix/www/bitrix/modules/main/include/prolog_before.php:19
+#2: require(string)
+	/home/bitrix/www/bitrix/modules/main/tools/cron_events.php:11
+----------
+
+OTUS: 2025-09-16 14:37:43 - Host: 192.168.0.111:80 - UNCAUGHT_EXCEPTION - [Error] 
+Class "ANBLogerTest" not found (0)
+/home/bitrix/www/otus/simplelog.php:17
+----------
+
+OTUS: 2025-09-16 14:38:30 - Host: 192.168.0.111:80 - UNCAUGHT_EXCEPTION - [Error] 
+Call to undefined method ANBLogerTest::addToLog() (0)
+/home/bitrix/www/otus/simplelog.php:17
+----------
+
+OTUS: 2025-09-16 14:39:01 - Host:  - UNCAUGHT_EXCEPTION - [RuntimeException] 
+Could not start session because headers have already been sent. "/home/bitrix/www/local/app/debug/MyLog.php":1. (0)
+/home/bitrix/www/bitrix/modules/main/lib/session/session.php:143
+#0: Bitrix\Main\Session\Session->start
+	/home/bitrix/www/bitrix/modules/main/lib/session/kernelsessionproxy.php:47
+#1: Bitrix\Main\Session\KernelSessionProxy->start
+	/home/bitrix/www/bitrix/modules/main/include.php:1
+#2: require_once(string)
+	/home/bitrix/www/bitrix/modules/main/include/prolog_before.php:19
+#3: require(string)
+	/home/bitrix/www/bitrix/modules/main/tools/cron_events.php:11
+----------
+
+OTUS: 2025-09-16 14:40:02 - Host:  - UNCAUGHT_EXCEPTION - [RuntimeException] 
+Could not start session because headers have already been sent. "/home/bitrix/www/local/app/debug/MyLog.php":1. (0)
+/home/bitrix/www/bitrix/modules/main/lib/session/session.php:143
+#0: Bitrix\Main\Session\Session->start
+	/home/bitrix/www/bitrix/modules/main/lib/session/kernelsessionproxy.php:47
+#1: Bitrix\Main\Session\KernelSessionProxy->start
+	/home/bitrix/www/bitrix/modules/main/include.php:1
+#2: require_once(string)
+	/home/bitrix/www/bitrix/modules/main/include/prolog_before.php:19
+#3: require(string)
+	/home/bitrix/www/bitrix/modules/main/tools/cron_events.php:11
+----------
+
+OTUS: 2025-09-16 14:41:01 - Host:  - UNCAUGHT_EXCEPTION - [RuntimeException] 
+Could not start session because headers have already been sent. "/home/bitrix/www/local/app/debug/MyLog.php":1. (0)
+/home/bitrix/www/bitrix/modules/main/lib/session/session.php:143
+#0: Bitrix\Main\Session\Session->start
+	/home/bitrix/www/bitrix/modules/main/lib/session/kernelsessionproxy.php:47
+#1: Bitrix\Main\Session\KernelSessionProxy->start
+	/home/bitrix/www/bitrix/modules/main/include.php:1
+#2: require_once(string)
+	/home/bitrix/www/bitrix/modules/main/include/prolog_before.php:19
+#3: require(string)
+	/home/bitrix/www/bitrix/modules/main/tools/cron_events.php:11
+----------
+
+OTUS: 2025-09-16 14:42:04 - Host:  - UNCAUGHT_EXCEPTION - [RuntimeException] 
+Could not start session because headers have already been sent. "/home/bitrix/www/local/app/debug/MyLog.php":1. (0)
+/home/bitrix/www/bitrix/modules/main/lib/session/session.php:143
+#0: Bitrix\Main\Session\Session->start
+	/home/bitrix/www/bitrix/modules/main/lib/session/kernelsessionproxy.php:47
+#1: Bitrix\Main\Session\KernelSessionProxy->start
+	/home/bitrix/www/bitrix/modules/main/include.php:1
+#2: require_once(string)
+	/home/bitrix/www/bitrix/modules/main/include/prolog_before.php:19
+#3: require(string)
+	/home/bitrix/www/bitrix/modules/main/tools/cron_events.php:11
+----------
+
+OTUS: 2025-09-16 14:42:43 - Host: 192.168.0.111:80 - UNCAUGHT_EXCEPTION - [Error] 
+Using $this when not in object context (0)
+/home/bitrix/www/local/app/debug/MyLog.php:12
+#0: ANBLogerTest::addToLog
+	/home/bitrix/www/otus/simplelog.php:17
+----------
+
+OTUS: 2025-09-16 14:43:03 - Host:  - UNCAUGHT_EXCEPTION - [RuntimeException] 
+Could not start session because headers have already been sent. "/home/bitrix/www/local/app/debug/MyLog.php":1. (0)
+/home/bitrix/www/bitrix/modules/main/lib/session/session.php:143
+#0: Bitrix\Main\Session\Session->start
+	/home/bitrix/www/bitrix/modules/main/lib/session/kernelsessionproxy.php:47
+#1: Bitrix\Main\Session\KernelSessionProxy->start
+	/home/bitrix/www/bitrix/modules/main/include.php:1
+#2: require_once(string)
+	/home/bitrix/www/bitrix/modules/main/include/prolog_before.php:19
+#3: require(string)
+	/home/bitrix/www/bitrix/modules/main/tools/cron_events.php:11
+----------
+
+OTUS: 2025-09-16 14:44:05 - Host:  - UNCAUGHT_EXCEPTION - [RuntimeException] 
+Could not start session because headers have already been sent. "/home/bitrix/www/local/app/debug/MyLog.php":1. (0)
+/home/bitrix/www/bitrix/modules/main/lib/session/session.php:143
+#0: Bitrix\Main\Session\Session->start
+	/home/bitrix/www/bitrix/modules/main/lib/session/kernelsessionproxy.php:47
+#1: Bitrix\Main\Session\KernelSessionProxy->start
+	/home/bitrix/www/bitrix/modules/main/include.php:1
+#2: require_once(string)
+	/home/bitrix/www/bitrix/modules/main/include/prolog_before.php:19
+#3: require(string)
+	/home/bitrix/www/bitrix/modules/main/tools/cron_events.php:11
+----------
+
+OTUS: 2025-09-16 14:45:08 - Host:  - UNCAUGHT_EXCEPTION - [RuntimeException] 
+Could not start session because headers have already been sent. "/home/bitrix/www/local/app/debug/MyLog.php":1. (0)
+/home/bitrix/www/bitrix/modules/main/lib/session/session.php:143
+#0: Bitrix\Main\Session\Session->start
+	/home/bitrix/www/bitrix/modules/main/lib/session/kernelsessionproxy.php:47
+#1: Bitrix\Main\Session\KernelSessionProxy->start
+	/home/bitrix/www/bitrix/modules/main/include.php:1
+#2: require_once(string)
+	/home/bitrix/www/bitrix/modules/main/include/prolog_before.php:19
+#3: require(string)
+	/home/bitrix/www/bitrix/modules/main/tools/cron_events.php:11
+----------
+
+OTUS: 2025-09-16 14:46:03 - Host:  - UNCAUGHT_EXCEPTION - [RuntimeException] 
+Could not start session because headers have already been sent. "/home/bitrix/www/local/app/debug/MyLog.php":1. (0)
+/home/bitrix/www/bitrix/modules/main/lib/session/session.php:143
+#0: Bitrix\Main\Session\Session->start
+	/home/bitrix/www/bitrix/modules/main/lib/session/kernelsessionproxy.php:47
+#1: Bitrix\Main\Session\KernelSessionProxy->start
+	/home/bitrix/www/bitrix/modules/main/include.php:1
+#2: require_once(string)
+	/home/bitrix/www/bitrix/modules/main/include/prolog_before.php:19
+#3: require(string)
+	/home/bitrix/www/bitrix/modules/main/tools/cron_events.php:11
+----------
+
+OTUS: 2025-09-16 14:47:03 - Host:  - UNCAUGHT_EXCEPTION - [RuntimeException] 
+Could not start session because headers have already been sent. "/home/bitrix/www/local/app/debug/MyLog.php":1. (0)
+/home/bitrix/www/bitrix/modules/main/lib/session/session.php:143
+#0: Bitrix\Main\Session\Session->start
+	/home/bitrix/www/bitrix/modules/main/lib/session/kernelsessionproxy.php:47
+#1: Bitrix\Main\Session\KernelSessionProxy->start
+	/home/bitrix/www/bitrix/modules/main/include.php:1
+#2: require_once(string)
+	/home/bitrix/www/bitrix/modules/main/include/prolog_before.php:19
+#3: require(string)
+	/home/bitrix/www/bitrix/modules/main/tools/cron_events.php:11
+----------
+
+OTUS: 2025-09-16 14:48:02 - Host:  - UNCAUGHT_EXCEPTION - [RuntimeException] 
+Could not start session because headers have already been sent. "/home/bitrix/www/local/app/debug/MyLog.php":1. (0)
+/home/bitrix/www/bitrix/modules/main/lib/session/session.php:143
+#0: Bitrix\Main\Session\Session->start
+	/home/bitrix/www/bitrix/modules/main/lib/session/kernelsessionproxy.php:47
+#1: Bitrix\Main\Session\KernelSessionProxy->start
+	/home/bitrix/www/bitrix/modules/main/include.php:1
+#2: require_once(string)
+	/home/bitrix/www/bitrix/modules/main/include/prolog_before.php:19
+#3: require(string)
+	/home/bitrix/www/bitrix/modules/main/tools/cron_events.php:11
+----------
+
+OTUS: 2025-09-16 14:49:03 - Host:  - UNCAUGHT_EXCEPTION - [RuntimeException] 
+Could not start session because headers have already been sent. "/home/bitrix/www/local/app/debug/MyLog.php":1. (0)
+/home/bitrix/www/bitrix/modules/main/lib/session/session.php:143
+#0: Bitrix\Main\Session\Session->start
+	/home/bitrix/www/bitrix/modules/main/lib/session/kernelsessionproxy.php:47
+#1: Bitrix\Main\Session\KernelSessionProxy->start
+	/home/bitrix/www/bitrix/modules/main/include.php:1
+#2: require_once(string)
+	/home/bitrix/www/bitrix/modules/main/include/prolog_before.php:19
+#3: require(string)
+	/home/bitrix/www/bitrix/modules/main/tools/cron_events.php:11
+----------
+
+OTUS: 2025-09-16 14:50:03 - Host:  - UNCAUGHT_EXCEPTION - [RuntimeException] 
+Could not start session because headers have already been sent. "/home/bitrix/www/local/app/debug/MyLog.php":1. (0)
+/home/bitrix/www/bitrix/modules/main/lib/session/session.php:143
+#0: Bitrix\Main\Session\Session->start
+	/home/bitrix/www/bitrix/modules/main/lib/session/kernelsessionproxy.php:47
+#1: Bitrix\Main\Session\KernelSessionProxy->start
+	/home/bitrix/www/bitrix/modules/main/include.php:1
+#2: require_once(string)
+	/home/bitrix/www/bitrix/modules/main/include/prolog_before.php:19
+#3: require(string)
+	/home/bitrix/www/bitrix/modules/main/tools/cron_events.php:11
+----------
+
+OTUS: 2025-09-16 14:50:54 - Host: 192.168.0.111:80 - UNCAUGHT_EXCEPTION - [TypeError] 
+file_put_contents(): Argument #3 ($flags) must be of type int, string given (0)
+/home/bitrix/www/local/app/debug/MyLog.php:15
+#0: file_put_contents
+	/home/bitrix/www/local/app/debug/MyLog.php:15
+#1: ANBLogerTest::addToLog
+	/home/bitrix/www/otus/simplelog.php:17
+----------
+
+OTUS: 2025-09-16 14:51:01 - Host:  - UNCAUGHT_EXCEPTION - [RuntimeException] 
+Could not start session because headers have already been sent. "/home/bitrix/www/local/app/debug/MyLog.php":1. (0)
+/home/bitrix/www/bitrix/modules/main/lib/session/session.php:143
+#0: Bitrix\Main\Session\Session->start
+	/home/bitrix/www/bitrix/modules/main/lib/session/kernelsessionproxy.php:47
+#1: Bitrix\Main\Session\KernelSessionProxy->start
+	/home/bitrix/www/bitrix/modules/main/include.php:1
+#2: require_once(string)
+	/home/bitrix/www/bitrix/modules/main/include/prolog_before.php:19
+#3: require(string)
+	/home/bitrix/www/bitrix/modules/main/tools/cron_events.php:11
+----------
+
+OTUS: 2025-09-16 14:52:02 - Host:  - UNCAUGHT_EXCEPTION - [RuntimeException] 
+Could not start session because headers have already been sent. "/home/bitrix/www/local/app/debug/MyLog.php":1. (0)
+/home/bitrix/www/bitrix/modules/main/lib/session/session.php:143
+#0: Bitrix\Main\Session\Session->start
+	/home/bitrix/www/bitrix/modules/main/lib/session/kernelsessionproxy.php:47
+#1: Bitrix\Main\Session\KernelSessionProxy->start
+	/home/bitrix/www/bitrix/modules/main/include.php:1
+#2: require_once(string)
+	/home/bitrix/www/bitrix/modules/main/include/prolog_before.php:19
+#3: require(string)
+	/home/bitrix/www/bitrix/modules/main/tools/cron_events.php:11
+----------
+
+OTUS: 2025-09-16 14:53:03 - Host:  - UNCAUGHT_EXCEPTION - [RuntimeException] 
+Could not start session because headers have already been sent. "/home/bitrix/www/local/app/debug/MyLog.php":1. (0)
+/home/bitrix/www/bitrix/modules/main/lib/session/session.php:143
+#0: Bitrix\Main\Session\Session->start
+	/home/bitrix/www/bitrix/modules/main/lib/session/kernelsessionproxy.php:47
+#1: Bitrix\Main\Session\KernelSessionProxy->start
+	/home/bitrix/www/bitrix/modules/main/include.php:1
+#2: require_once(string)
+	/home/bitrix/www/bitrix/modules/main/include/prolog_before.php:19
+#3: require(string)
+	/home/bitrix/www/bitrix/modules/main/tools/cron_events.php:11
+----------
+
+OTUS: 2025-09-16 14:54:05 - Host:  - UNCAUGHT_EXCEPTION - [RuntimeException] 
+Could not start session because headers have already been sent. "/home/bitrix/www/local/app/debug/MyLog.php":1. (0)
+/home/bitrix/www/bitrix/modules/main/lib/session/session.php:143
+#0: Bitrix\Main\Session\Session->start
+	/home/bitrix/www/bitrix/modules/main/lib/session/kernelsessionproxy.php:47
+#1: Bitrix\Main\Session\KernelSessionProxy->start
+	/home/bitrix/www/bitrix/modules/main/include.php:1
+#2: require_once(string)
+	/home/bitrix/www/bitrix/modules/main/include/prolog_before.php:19
+#3: require(string)
+	/home/bitrix/www/bitrix/modules/main/tools/cron_events.php:11
+----------
+
+OTUS: 2025-09-16 14:55:02 - Host:  - UNCAUGHT_EXCEPTION - [RuntimeException] 
+Could not start session because headers have already been sent. "/home/bitrix/www/local/app/debug/MyLog.php":1. (0)
+/home/bitrix/www/bitrix/modules/main/lib/session/session.php:143
+#0: Bitrix\Main\Session\Session->start
+	/home/bitrix/www/bitrix/modules/main/lib/session/kernelsessionproxy.php:47
+#1: Bitrix\Main\Session\KernelSessionProxy->start
+	/home/bitrix/www/bitrix/modules/main/include.php:1
+#2: require_once(string)
+	/home/bitrix/www/bitrix/modules/main/include/prolog_before.php:19
+#3: require(string)
+	/home/bitrix/www/bitrix/modules/main/tools/cron_events.php:11
+----------
+
+OTUS: 2025-09-16 14:56:03 - Host:  - UNCAUGHT_EXCEPTION - [RuntimeException] 
+Could not start session because headers have already been sent. "/home/bitrix/www/local/app/debug/MyLog.php":1. (0)
+/home/bitrix/www/bitrix/modules/main/lib/session/session.php:143
+#0: Bitrix\Main\Session\Session->start
+	/home/bitrix/www/bitrix/modules/main/lib/session/kernelsessionproxy.php:47
+#1: Bitrix\Main\Session\KernelSessionProxy->start
+	/home/bitrix/www/bitrix/modules/main/include.php:1
+#2: require_once(string)
+	/home/bitrix/www/bitrix/modules/main/include/prolog_before.php:19
+#3: require(string)
+	/home/bitrix/www/bitrix/modules/main/tools/cron_events.php:11
+----------
+
+OTUS: 2025-09-16 14:57:04 - Host:  - UNCAUGHT_EXCEPTION - [RuntimeException] 
+Could not start session because headers have already been sent. "/home/bitrix/www/local/app/debug/MyLog.php":1. (0)
+/home/bitrix/www/bitrix/modules/main/lib/session/session.php:143
+#0: Bitrix\Main\Session\Session->start
+	/home/bitrix/www/bitrix/modules/main/lib/session/kernelsessionproxy.php:47
+#1: Bitrix\Main\Session\KernelSessionProxy->start
+	/home/bitrix/www/bitrix/modules/main/include.php:1
+#2: require_once(string)
+	/home/bitrix/www/bitrix/modules/main/include/prolog_before.php:19
+#3: require(string)
+	/home/bitrix/www/bitrix/modules/main/tools/cron_events.php:11
+----------
+
+OTUS: 2025-09-16 14:58:03 - Host:  - UNCAUGHT_EXCEPTION - [RuntimeException] 
+Could not start session because headers have already been sent. "/home/bitrix/www/local/app/debug/MyLog.php":1. (0)
+/home/bitrix/www/bitrix/modules/main/lib/session/session.php:143
+#0: Bitrix\Main\Session\Session->start
+	/home/bitrix/www/bitrix/modules/main/lib/session/kernelsessionproxy.php:47
+#1: Bitrix\Main\Session\KernelSessionProxy->start
+	/home/bitrix/www/bitrix/modules/main/include.php:1
+#2: require_once(string)
+	/home/bitrix/www/bitrix/modules/main/include/prolog_before.php:19
+#3: require(string)
+	/home/bitrix/www/bitrix/modules/main/tools/cron_events.php:11
+----------
+
+OTUS: 2025-09-16 14:59:03 - Host:  - UNCAUGHT_EXCEPTION - [RuntimeException] 
+Could not start session because headers have already been sent. "/home/bitrix/www/local/app/debug/MyLog.php":1. (0)
+/home/bitrix/www/bitrix/modules/main/lib/session/session.php:143
+#0: Bitrix\Main\Session\Session->start
+	/home/bitrix/www/bitrix/modules/main/lib/session/kernelsessionproxy.php:47
+#1: Bitrix\Main\Session\KernelSessionProxy->start
+	/home/bitrix/www/bitrix/modules/main/include.php:1
+#2: require_once(string)
+	/home/bitrix/www/bitrix/modules/main/include/prolog_before.php:19
+#3: require(string)
+	/home/bitrix/www/bitrix/modules/main/tools/cron_events.php:11
+----------
+
+OTUS: 2025-09-16 15:00:03 - Host:  - UNCAUGHT_EXCEPTION - [RuntimeException] 
+Could not start session because headers have already been sent. "/home/bitrix/www/local/app/debug/MyLog.php":1. (0)
+/home/bitrix/www/bitrix/modules/main/lib/session/session.php:143
+#0: Bitrix\Main\Session\Session->start
+	/home/bitrix/www/bitrix/modules/main/lib/session/kernelsessionproxy.php:47
+#1: Bitrix\Main\Session\KernelSessionProxy->start
+	/home/bitrix/www/bitrix/modules/main/include.php:1
+#2: require_once(string)
+	/home/bitrix/www/bitrix/modules/main/include/prolog_before.php:19
+#3: require(string)
+	/home/bitrix/www/bitrix/modules/main/tools/cron_events.php:11
+----------
+
+OTUS: 2025-09-16 15:01:03 - Host:  - UNCAUGHT_EXCEPTION - [RuntimeException] 
+Could not start session because headers have already been sent. "/home/bitrix/www/local/app/debug/MyLog.php":1. (0)
+/home/bitrix/www/bitrix/modules/main/lib/session/session.php:143
+#0: Bitrix\Main\Session\Session->start
+	/home/bitrix/www/bitrix/modules/main/lib/session/kernelsessionproxy.php:47
+#1: Bitrix\Main\Session\KernelSessionProxy->start
+	/home/bitrix/www/bitrix/modules/main/include.php:1
+#2: require_once(string)
+	/home/bitrix/www/bitrix/modules/main/include/prolog_before.php:19
+#3: require(string)
+	/home/bitrix/www/bitrix/modules/main/tools/cron_events.php:11
+----------
+
+OTUS: 2025-09-16 15:02:02 - Host:  - UNCAUGHT_EXCEPTION - [RuntimeException] 
+Could not start session because headers have already been sent. "/home/bitrix/www/local/app/debug/MyLog.php":1. (0)
+/home/bitrix/www/bitrix/modules/main/lib/session/session.php:143
+#0: Bitrix\Main\Session\Session->start
+	/home/bitrix/www/bitrix/modules/main/lib/session/kernelsessionproxy.php:47
+#1: Bitrix\Main\Session\KernelSessionProxy->start
+	/home/bitrix/www/bitrix/modules/main/include.php:1
+#2: require_once(string)
+	/home/bitrix/www/bitrix/modules/main/include/prolog_before.php:19
+#3: require(string)
+	/home/bitrix/www/bitrix/modules/main/tools/cron_events.php:11
+----------
+
+OTUS: 2025-09-16 15:03:03 - Host:  - UNCAUGHT_EXCEPTION - [RuntimeException] 
+Could not start session because headers have already been sent. "/home/bitrix/www/local/app/debug/MyLog.php":1. (0)
+/home/bitrix/www/bitrix/modules/main/lib/session/session.php:143
+#0: Bitrix\Main\Session\Session->start
+	/home/bitrix/www/bitrix/modules/main/lib/session/kernelsessionproxy.php:47
+#1: Bitrix\Main\Session\KernelSessionProxy->start
+	/home/bitrix/www/bitrix/modules/main/include.php:1
+#2: require_once(string)
+	/home/bitrix/www/bitrix/modules/main/include/prolog_before.php:19
+#3: require(string)
+	/home/bitrix/www/bitrix/modules/main/tools/cron_events.php:11
+----------
+
+OTUS: 2025-09-16 15:04:01 - Host:  - UNCAUGHT_EXCEPTION - [RuntimeException] 
+Could not start session because headers have already been sent. "/home/bitrix/www/local/app/debug/MyLog.php":1. (0)
+/home/bitrix/www/bitrix/modules/main/lib/session/session.php:143
+#0: Bitrix\Main\Session\Session->start
+	/home/bitrix/www/bitrix/modules/main/lib/session/kernelsessionproxy.php:47
+#1: Bitrix\Main\Session\KernelSessionProxy->start
+	/home/bitrix/www/bitrix/modules/main/include.php:1
+#2: require_once(string)
+	/home/bitrix/www/bitrix/modules/main/include/prolog_before.php:19
+#3: require(string)
+	/home/bitrix/www/bitrix/modules/main/tools/cron_events.php:11
+----------
+
+OTUS: 2025-09-16 15:05:04 - Host:  - UNCAUGHT_EXCEPTION - [RuntimeException] 
+Could not start session because headers have already been sent. "/home/bitrix/www/local/app/debug/MyLog.php":1. (0)
+/home/bitrix/www/bitrix/modules/main/lib/session/session.php:143
+#0: Bitrix\Main\Session\Session->start
+	/home/bitrix/www/bitrix/modules/main/lib/session/kernelsessionproxy.php:47
+#1: Bitrix\Main\Session\KernelSessionProxy->start
+	/home/bitrix/www/bitrix/modules/main/include.php:1
+#2: require_once(string)
+	/home/bitrix/www/bitrix/modules/main/include/prolog_before.php:19
+#3: require(string)
+	/home/bitrix/www/bitrix/modules/main/tools/cron_events.php:11
+----------
+
+OTUS: 2025-09-16 15:06:01 - Host:  - UNCAUGHT_EXCEPTION - [RuntimeException] 
+Could not start session because headers have already been sent. "/home/bitrix/www/local/app/debug/MyLog.php":1. (0)
+/home/bitrix/www/bitrix/modules/main/lib/session/session.php:143
+#0: Bitrix\Main\Session\Session->start
+	/home/bitrix/www/bitrix/modules/main/lib/session/kernelsessionproxy.php:47
+#1: Bitrix\Main\Session\KernelSessionProxy->start
+	/home/bitrix/www/bitrix/modules/main/include.php:1
+#2: require_once(string)
+	/home/bitrix/www/bitrix/modules/main/include/prolog_before.php:19
+#3: require(string)
+	/home/bitrix/www/bitrix/modules/main/tools/cron_events.php:11
+----------
+
+OTUS: 2025-09-16 15:07:02 - Host:  - UNCAUGHT_EXCEPTION - [RuntimeException] 
+Could not start session because headers have already been sent. "/home/bitrix/www/local/app/debug/MyLog.php":1. (0)
+/home/bitrix/www/bitrix/modules/main/lib/session/session.php:143
+#0: Bitrix\Main\Session\Session->start
+	/home/bitrix/www/bitrix/modules/main/lib/session/kernelsessionproxy.php:47
+#1: Bitrix\Main\Session\KernelSessionProxy->start
+	/home/bitrix/www/bitrix/modules/main/include.php:1
+#2: require_once(string)
+	/home/bitrix/www/bitrix/modules/main/include/prolog_before.php:19
+#3: require(string)
+	/home/bitrix/www/bitrix/modules/main/tools/cron_events.php:11
+----------
+
+OTUS: 2025-09-16 15:08:03 - Host:  - UNCAUGHT_EXCEPTION - [RuntimeException] 
+Could not start session because headers have already been sent. "/home/bitrix/www/local/app/debug/MyLog.php":1. (0)
+/home/bitrix/www/bitrix/modules/main/lib/session/session.php:143
+#0: Bitrix\Main\Session\Session->start
+	/home/bitrix/www/bitrix/modules/main/lib/session/kernelsessionproxy.php:47
+#1: Bitrix\Main\Session\KernelSessionProxy->start
+	/home/bitrix/www/bitrix/modules/main/include.php:1
+#2: require_once(string)
+	/home/bitrix/www/bitrix/modules/main/include/prolog_before.php:19
+#3: require(string)
+	/home/bitrix/www/bitrix/modules/main/tools/cron_events.php:11
+----------
+
+OTUS: 2025-09-16 15:09:03 - Host:  - UNCAUGHT_EXCEPTION - [RuntimeException] 
+Could not start session because headers have already been sent. "/home/bitrix/www/local/app/debug/MyLog.php":1. (0)
+/home/bitrix/www/bitrix/modules/main/lib/session/session.php:143
+#0: Bitrix\Main\Session\Session->start
+	/home/bitrix/www/bitrix/modules/main/lib/session/kernelsessionproxy.php:47
+#1: Bitrix\Main\Session\KernelSessionProxy->start
+	/home/bitrix/www/bitrix/modules/main/include.php:1
+#2: require_once(string)
+	/home/bitrix/www/bitrix/modules/main/include/prolog_before.php:19
+#3: require(string)
+	/home/bitrix/www/bitrix/modules/main/tools/cron_events.php:11
+----------
+
+OTUS: 2025-09-16 15:10:03 - Host:  - UNCAUGHT_EXCEPTION - [RuntimeException] 
+Could not start session because headers have already been sent. "/home/bitrix/www/local/app/debug/MyLog.php":1. (0)
+/home/bitrix/www/bitrix/modules/main/lib/session/session.php:143
+#0: Bitrix\Main\Session\Session->start
+	/home/bitrix/www/bitrix/modules/main/lib/session/kernelsessionproxy.php:47
+#1: Bitrix\Main\Session\KernelSessionProxy->start
+	/home/bitrix/www/bitrix/modules/main/include.php:1
+#2: require_once(string)
+	/home/bitrix/www/bitrix/modules/main/include/prolog_before.php:19
+#3: require(string)
+	/home/bitrix/www/bitrix/modules/main/tools/cron_events.php:11
+----------
+
+OTUS: 2025-09-16 15:10:18 - Host: 192.168.0.111:80 - UNCAUGHT_EXCEPTION - [DivisionByZeroError] 
+Division by zero (0)
+/home/bitrix/www/otus/simpleex.php:6
+----------
+
+OTUS: 2025-09-16 15:10:29 - Host: 192.168.0.111:80 - UNCAUGHT_EXCEPTION - [DivisionByZeroError] 
+Division by zero (0)
+/home/bitrix/www/otus/simpleex.php:6
+----------
+
+OTUS: 2025-09-16 15:11:03 - Host:  - UNCAUGHT_EXCEPTION - [RuntimeException] 
+Could not start session because headers have already been sent. "/home/bitrix/www/local/app/debug/MyLog.php":1. (0)
+/home/bitrix/www/bitrix/modules/main/lib/session/session.php:143
+#0: Bitrix\Main\Session\Session->start
+	/home/bitrix/www/bitrix/modules/main/lib/session/kernelsessionproxy.php:47
+#1: Bitrix\Main\Session\KernelSessionProxy->start
+	/home/bitrix/www/bitrix/modules/main/include.php:1
+#2: require_once(string)
+	/home/bitrix/www/bitrix/modules/main/include/prolog_before.php:19
+#3: require(string)
+	/home/bitrix/www/bitrix/modules/main/tools/cron_events.php:11
+----------
+
+OTUS: 2025-09-16 15:12:01 - Host: 192.168.0.111:80 - UNCAUGHT_EXCEPTION - [DivisionByZeroError] 
+Division by zero (0)
+/home/bitrix/www/otus/simpleex.php:6
+----------
+
+OTUS: 2025-09-16 15:12:03 - Host: 192.168.0.111:80 - UNCAUGHT_EXCEPTION - [DivisionByZeroError] 
+Division by zero (0)
+/home/bitrix/www/otus/simpleex.php:6
+----------
+
+OTUS: 2025-09-16 15:12:03 - Host:  - UNCAUGHT_EXCEPTION - [RuntimeException] 
+Could not start session because headers have already been sent. "/home/bitrix/www/local/app/debug/MyLog.php":1. (0)
+/home/bitrix/www/bitrix/modules/main/lib/session/session.php:143
+#0: Bitrix\Main\Session\Session->start
+	/home/bitrix/www/bitrix/modules/main/lib/session/kernelsessionproxy.php:47
+#1: Bitrix\Main\Session\KernelSessionProxy->start
+	/home/bitrix/www/bitrix/modules/main/include.php:1
+#2: require_once(string)
+	/home/bitrix/www/bitrix/modules/main/include/prolog_before.php:19
+#3: require(string)
+	/home/bitrix/www/bitrix/modules/main/tools/cron_events.php:11
+----------
+
+OTUS: 2025-09-16 15:13:03 - Host:  - UNCAUGHT_EXCEPTION - [RuntimeException] 
+Could not start session because headers have already been sent. "/home/bitrix/www/local/app/debug/MyLog.php":1. (0)
+/home/bitrix/www/bitrix/modules/main/lib/session/session.php:143
+#0: Bitrix\Main\Session\Session->start
+	/home/bitrix/www/bitrix/modules/main/lib/session/kernelsessionproxy.php:47
+#1: Bitrix\Main\Session\KernelSessionProxy->start
+	/home/bitrix/www/bitrix/modules/main/include.php:1
+#2: require_once(string)
+	/home/bitrix/www/bitrix/modules/main/include/prolog_before.php:19
+#3: require(string)
+	/home/bitrix/www/bitrix/modules/main/tools/cron_events.php:11
+----------
+
+OTUS: 2025-09-16 15:13:37 - Host: 192.168.0.111:80 - UNCAUGHT_EXCEPTION - [Error] 
+Class "ANBLogerTest" not found (0)
+/home/bitrix/www/otus/simplelog.php:17
+----------
+
+OTUS: 2025-09-16 15:13:54 - Host: 192.168.0.111:80 - UNCAUGHT_EXCEPTION - [Error] 
+Class "ANBLogerTest" not found (0)
+/home/bitrix/www/otus/simplelog.php:17
+----------
+
+OTUS: 2025-09-16 15:15:18 - Host: 192.168.0.111:80 - UNCAUGHT_EXCEPTION - [Error] 
+Class "ANB" not found (0)
+/home/bitrix/www/otus/simplelog.php:16
+----------
+

@@ -5,10 +5,6 @@ use Bitrix\Main\Diag\ExceptionHandlerFormatter;
 
 class FileExaptionHandlerLogCustom extends FileExceptionHandlerLog
 {
-   /**
-    * @param \Throwable $exception
-    * @param int $logType
-    */
    public function write($exception, $logType)
    {
       $text = ExceptionHandlerFormatter::format($exception, false, $this->level);
