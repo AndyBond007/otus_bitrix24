@@ -16,22 +16,4 @@ use Bitrix\Main\ORM\Fields\Validators\LengthValidator;
 class ProceduresPropertyValuesTable extends AbstractIblockPropertyValuesTable
 {
     public const IBLOCK_ID = 17;
-
-    /**
-     * Returns entity map definition.
-     *
-     * @return array
-     */
-    public static function getMap(): array
-    {
-        return [
-
-            'IBLOCK_ELEMENT_ID' => (new IntegerField(
-                'IBLOCK_ELEMENT_ID',
-                []
-            ))->configureTitle(Loc::getMessage('ELEMENT_PROP_S17_ENTITY_IBLOCK_ELEMENT_ID_FIELD'))
-                ->configurePrimary(true),
-
-        ];
-    }
 }
