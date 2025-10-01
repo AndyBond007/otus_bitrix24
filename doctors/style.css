@@ -59,6 +59,7 @@ section.doctors {
 .doctor-add-form>select,.doctor-add-form>input[type=submit] {
     width:416px;
 }
+
 .add-buttons {
     display:flex;
     justify-content:flex-end;

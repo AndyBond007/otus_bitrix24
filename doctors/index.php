@@ -4,6 +4,7 @@ require($_SERVER["DOCUMENT_ROOT"] . "/bitrix/header.php");
 $APPLICATION->SetTitle("Доктора");
 $APPLICATION->SetAdditionalCSS('/doctors/style.css');
 
+use Bitrix\Calendar\ICal\Builder\Alert;
 use \Bitrix\Iblock\Iblock\Elements;
 use Models\Lists\DoctorsPropertyValuesTable as DoctorsTable;
 use Models\Lists\ProceduresPropertyValuesTable as ProceduresTable;
@@ -103,6 +104,17 @@ if ($action == 'new' || $action == 'edit') {
         $data = $doctor;
     }
 }
+
+if (isset($_POST['doctor-delete'])) {
+    unset($_POST['doctor-delete']);
+
+    if (empty($action) && !empty($doctor['ID'])) {
+        if (DoctorsTable::delete($doctor['ID'])) {
+            header('Location: /doctors');
+            exit();
+        } else 'Произошла ошибка удаления доктора';
+    }
+}
 ?>
 
 <section class="doctors">
@@ -114,6 +126,10 @@ if ($action == 'new' || $action == 'edit') {
                 <a href="/doctors/newproc"><button>Добавить процедуру</button></a>
             <?php else: ?>
                 <a href="/doctors/edit/<?= $doctor_name ?>"><button>Редактировать данные доктора</button></a>
+                <form method="POST">
+                    <button type="submit" name="doctor-delete">Удалить доктора</button>
+                </form>
+
             <?php endif; ?>
         </div>
     <?php endif; ?>
@@ -146,6 +162,7 @@ if ($action == 'new' || $action == 'edit') {
 
     <?php if ($action == 'new' || $action == 'edit'): ?>
         <form method="POST">
+
             <h2 style="text-align: center;">Информация о докторе</h2>
             <div class="doctor-add-form">
                 <?php if (isset($data['ID'])): ?>
