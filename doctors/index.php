@@ -38,6 +38,7 @@ if (!empty($doctor_name)) {
         ->setSelect([
             '*',
             'NAME' => 'ELEMENT.NAME',
+            'DETAIL_PICTURE' => 'ELEMENT.DETAIL_PICTURE',
             'SURNAME',
             'FIRSTNAME',
             'MIDNAME',
@@ -62,7 +63,7 @@ if (!empty($doctor_name)) {
 
 if (empty($doctor_name) && empty($action)) {
     $doctors = DoctorsTable::query()
-        ->setSelect(['*', 'NAME' => 'ELEMENT.NAME', 'ID' => 'ELEMENT.ID', 'FIRSTNAME'])
+        ->setSelect(['*', 'NAME' => 'ELEMENT.NAME', 'DETAIL_PICTURE' => 'ELEMENT.DETAIL_PICTURE', 'ID' => 'ELEMENT.ID', 'FIRSTNAME'])
         ->fetchAll();
 }
 
@@ -82,9 +83,12 @@ if ($action == 'new' || $action == 'edit') {
         if ($action == 'edit' && !empty($_POST['ID'])) {
             $ID = $_POST['ID'];
             unset($_POST['ID']);
+
             $_POST['IBLOCK_ELEMENT_ID'] = $ID;
+
             $procs = $_POST['PROCEDURES'];
             unset($_POST['PROCEDURES']);
+
             CIBlockElement::SetPropertyValues($ID, DoctorsTable::IBLOCK_ID, $procs, 'PROCEDURES');
 
             if (DoctorsTable::update($_POST['ID'], $_POST)) {
@@ -117,6 +121,7 @@ if (isset($_POST['doctor-delete'])) {
 }
 ?>
 
+
 <section class="doctors">
     <h1><a href="/doctors">Доктора</a></h1>
     <?php if (empty($action)): ?>
@@ -139,9 +144,19 @@ if (isset($_POST['doctor-delete'])) {
             <div class="card">
                 <a href="/doctors/<?= $doc["NAME"] ?>">
                     <div class="fio">
-                        <?= $doc['SURNAME'] ?>
-                        <?= $doc['FIRSTNAME'] ?>
-                        <?= $doc['MIDNAME'] ?>
+                        <table>
+                            <tr>
+                                <td>
+                                    <?php $arFields = CFile::GetFileArray($doc["DETAIL_PICTURE"]); ?>
+                                    <img src="<?= $arFields['SRC'] ?>" heigh="60" width="60" alt="" />
+                                </td>
+                                <td>
+                                    <?= $doc['SURNAME'] ?>
+                                    <?= $doc['FIRSTNAME'] ?>
+                                    <?= $doc['MIDNAME'] ?>
+                                </td>
+                            </tr>
+                        </table>
                     </div>
                 </a>
             </div>
@@ -150,6 +165,9 @@ if (isset($_POST['doctor-delete'])) {
 
     <?php if (is_array($doctor) && sizeof($doctor) > 0 && $action != 'edit'): ?>
         <div class="doctor-page">
+            <?php $arFields = CFile::GetFileArray($doctor["DETAIL_PICTURE"]); ?>
+            <a href="<?= $arFields['SRC'] ?>"><img src="<?= $arFields['SRC'] ?>" heigh="200" width="200" alt="" /></a>
+
             <h2><?= $doctor['SURNAME'] . " " . $doctor['FIRSTNAME'] . " " . $doctor['MIDNAME'] ?></h2>
             <h3>Процедуры</h3>
             <ul>
@@ -174,7 +192,6 @@ if (isset($_POST['doctor-delete'])) {
                 <input type="text" name="SURNAME" placeholder="Фамилия доктора" value="<?= $data['SURNAME'] ?? '' ?>" required minlength="3" />
                 <input type="text" name="FIRSTNAME" placeholder="Имя доктора" value="<?= $data['FIRSTNAME'] ?? '' ?>" required minlength="3" />
                 <input type="text" name="MIDNAME" placeholder="Отчество доктора" value="<?= $data['MIDNAME'] ?? '' ?>" required minlength="3" />
-
                 <select multiple name="PROCEDURES[]">
                     <option value="" selected disabled>Процедуры</option>
                     <?php foreach ($proc_options as $proc): ?>
@@ -197,4 +214,5 @@ if (isset($_POST['doctor-delete'])) {
             </div>
         </form>
     <?php endif; ?>
+
 </section>
