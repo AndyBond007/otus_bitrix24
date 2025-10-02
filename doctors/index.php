@@ -51,7 +51,7 @@ if (!empty($doctor_name)) {
     if (is_array($doctor)) {
         if ($doctor['PROCEDURES']) {
             $procs = ProceduresTable::query()
-                ->setSelect(['NAME' => 'ELEMENT.NAME'])
+                ->setSelect(['NAME' => 'ELEMENT.NAME', 'PROCLEN'])
                 ->where("ELEMENT.ID", "in", $doctor['PROCEDURES'])
                 ->fetchAll();
         }
@@ -148,7 +148,7 @@ if (isset($_POST['doctor-delete'])) {
                             <tr>
                                 <td>
                                     <?php $arFields = CFile::GetFileArray($doc["DETAIL_PICTURE"]); ?>
-                                    <img src="<?= $arFields['SRC'] ?>" heigh="60" width="60" alt="" />
+                                    <img src="<?= $arFields['SRC'] ?>" alt="" />
                                 </td>
                                 <td>
                                     <?= $doc['SURNAME'] ?>
@@ -172,7 +172,7 @@ if (isset($_POST['doctor-delete'])) {
             <h3>Процедуры</h3>
             <ul>
                 <?php foreach ($procs as $pr): ?>
-                    <li><?= $pr['NAME'] ?></li>
+                    <li><?= $pr['NAME'] ?> (длительность, мин:<?= (int)$pr['PROCLEN'] ?>)</li>
                 <?php endforeach; ?>
             </ul>
         </div>
@@ -200,7 +200,9 @@ if (isset($_POST['doctor-delete'])) {
                         </option>
                     <?php endforeach; ?>
                 </select>
-                <input type="submit" name="doctor-submit" value="Сохранить изменения" />
+                <div class="add-buttons">
+                    <button type="submit" name="doctor-delete">Сохранить изменения</button>
+                </div>
             </div>
         </form>
     <?php endif; ?>
@@ -210,7 +212,11 @@ if (isset($_POST['doctor-delete'])) {
             <h2 style="text-align: center;">Добавить процедуру</h2>
             <div class="doctor-add-form">
                 <input type="text" name="NAME" placeholder="Название процедуры" value="<?= $data['NAME'] ?? '' ?>" required minlength="3" />
-                <input type="submit" name="proc-submit" value="Добавить процедуру" />
+                <input type="number" min="1" name="PROCLEN" placeholder="Длительность процедуры в минутах" value="<?= $data['PROCLEN'] ?? '' ?>" required minlength="3" />
+                <div class="add-buttons">
+                    <button type="submit" name="proc-submit">Добавить процедуру</button>
+                </div>
+
             </div>
         </form>
     <?php endif; ?>
