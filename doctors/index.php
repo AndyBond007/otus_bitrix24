@@ -94,12 +94,14 @@ if ($action == 'new' || $action == 'edit') {
             if (DoctorsTable::update($_POST['ID'], $_POST)) {
                 header('Location: /doctors');
                 exit();
-            } else 'Произошла ошибка обновления записи';
+            } else
+                'Произошла ошибка обновления записи';
         }
         if ($action = 'new' && DoctorsTable::add($_POST)) {
             header('Location: /doctors');
             exit();
-        } else 'Произошла ошибка добавления доктора';
+        } else
+            'Произошла ошибка добавления доктора';
     }
     $proc_options = ProceduresTable::query()
         ->setSelect(['ID' => 'ELEMENT.ID', 'NAME' => 'ELEMENT.NAME'])
@@ -201,7 +203,7 @@ if (isset($_POST['doctor-delete'])) {
                     <?php endforeach; ?>
                 </select>
                 <div class="add-buttons">
-                    <button type="submit" name="doctor-delete">Сохранить изменения</button>
+                    <button type="submit" name="doctor-submit">Сохранить изменения</button>
                 </div>
             </div>
         </form>
