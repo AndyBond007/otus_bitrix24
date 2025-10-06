@@ -26,7 +26,7 @@ class DoctorsPropertyValuesTable extends AbstractIblockPropertyValuesTable
     const IBLOCK_ID = 16;
 
     //TimeWeb
-    // const IBLOCK_ID = 19;
+    //const IBLOCK_ID = 19;
 
     public static function getMap(): array
     {

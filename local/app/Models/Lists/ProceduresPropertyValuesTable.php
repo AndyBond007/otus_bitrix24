@@ -19,5 +19,5 @@ class ProceduresPropertyValuesTable extends AbstractIblockPropertyValuesTable
     const IBLOCK_ID = 17;
 
     //TimeWeb
-    // const IBLOCK_ID = 21;
+    //const IBLOCK_ID = 21;
 }

@@ -16,7 +16,7 @@ define("NO_AGENT_CHECK", true);
 $_SERVER['DOCUMENT_ROOT'] = realpath('/home/bitrix/www');
 
 //TimeWeb
-// $_SERVER['DOCUMENT_ROOT'] = realpath('/home/c/ck31758/public_html');
+//$_SERVER['DOCUMENT_ROOT'] = realpath('/home/c/ck31758/public_html');
 
 require_once($_SERVER['DOCUMENT_ROOT'] . '/bitrix/modules/main/include/prolog_before.php');
 
