@@ -8,6 +8,7 @@ use Bitrix\Calendar\ICal\Builder\Alert;
 use \Bitrix\Iblock\Iblock\Elements;
 use Models\Lists\DoctorsPropertyValuesTable as DoctorsTable;
 use Models\Lists\ProceduresPropertyValuesTable as ProceduresTable;
+use Models\Lists\HospitalsTable as HospitalsTable;
 
 $APPLICATION->SetTitle('Доктора');
 
@@ -43,10 +44,29 @@ if (!empty($doctor_name)) {
             'FIRSTNAME',
             'MIDNAME',
             'PROCEDURES',
+            // 'HOSPITALS',
             'ID' => 'ELEMENT.ID',
         ])
         ->where('NAME', $doctor_name)
         ->fetch();
+
+    $doctor_hospitals = DoctorsTable::getByPrimary(
+        $doctor['ID'],
+        [
+            'select' => [
+                '*',
+                'HOSPITALS',
+            ]
+        ]
+    )
+        ->fetchObject();
+
+    foreach ($doctor_hospitals->getHospitals() as $hospital) {
+        $hospital_info['ID'] = $hospital->getId();
+        $hospital_info['TITLE'] = $hospital->getTitle();
+        $hospital_info['DESCRIPTION'] = $hospital->getDescription();
+        $doctor['HOSPITALS'][] = $hospital_info;
+    }
 
     if (is_array($doctor)) {
         if ($doctor['PROCEDURES']) {
@@ -171,12 +191,38 @@ if (isset($_POST['doctor-delete'])) {
             <a href="<?= $arFields['SRC'] ?>"><img src="<?= $arFields['SRC'] ?>" heigh="200" width="200" alt="" /></a>
 
             <h2><?= $doctor['SURNAME'] . " " . $doctor['FIRSTNAME'] . " " . $doctor['MIDNAME'] ?></h2>
-            <h3>Процедуры</h3>
-            <ul>
-                <?php foreach ($procs as $pr): ?>
-                    <li><?= $pr['NAME'] ?> (длительность, мин:<?= (int)$pr['PROCLEN'] ?>)</li>
-                <?php endforeach; ?>
-            </ul>
+            <table>
+                <tr>
+                    <td>
+                        <h3>Процедуры:</h3>
+                    </td>
+                    <td>
+                        <h3>Принимает:</h3>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td style="vertical-align: top;">
+                        <ul>
+                            <?php foreach ($procs as $pr): ?>
+                                <li><?= $pr['NAME'] ?> (длительность, мин:<?= (int)$pr['PROCLEN'] ?>)</li>
+                            <?php endforeach; ?>
+                        </ul>
+                    </td>
+                    <td style="vertical-align: top;">
+                        <ul>
+                            <?php foreach ($doctor['HOSPITALS'] as $hospital): ?>
+                                <li><?= $hospital['TITLE'] ?><br>Описание: <?= $hospital['DESCRIPTION'] ?></li>
+                            <?php endforeach; ?>
+                        </ul>
+                    </td>
+                </tr>
+            </table>
+
+
+
+
+
         </div>
     <?php endif; ?>
 
