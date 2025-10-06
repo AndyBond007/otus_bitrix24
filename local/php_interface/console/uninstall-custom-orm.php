@@ -12,7 +12,12 @@ define("NO_AGENT_STATISTIC", "Y");
 define("DisableEventsCheck", true);
 define("NO_AGENT_CHECK", true);
 
+//Local
 $_SERVER['DOCUMENT_ROOT'] = realpath('/home/bitrix/www');
+
+//TimeWeb
+// $_SERVER['DOCUMENT_ROOT'] = realpath('/home/c/ck31758/public_html');
+
 require_once($_SERVER['DOCUMENT_ROOT'] . '/bitrix/modules/main/include/prolog_before.php');
 
 use Bitrix\Main\Application;

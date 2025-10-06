@@ -22,7 +22,11 @@ use Models\Lists\ProceduresPropertyValuesTable as ProceduresTable;
 class DoctorsPropertyValuesTable extends AbstractIblockPropertyValuesTable
 {
 
+    //Local
     const IBLOCK_ID = 16;
+
+    //TimeWeb
+    // const IBLOCK_ID = 19;
 
     public static function getMap(): array
     {

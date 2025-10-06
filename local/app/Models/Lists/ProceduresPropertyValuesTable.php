@@ -15,5 +15,9 @@ use Bitrix\Main\ORM\Fields\Validators\LengthValidator;
 
 class ProceduresPropertyValuesTable extends AbstractIblockPropertyValuesTable
 {
-    public const IBLOCK_ID = 17;
+    //Local
+    const IBLOCK_ID = 17;
+
+    //TimeWeb
+    // const IBLOCK_ID = 21;
 }
