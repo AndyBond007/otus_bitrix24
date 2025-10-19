@@ -13,7 +13,7 @@ class CurrVewComponent extends CBitrixComponent
     {
         $arParams['USER_ID'] ??= 0;
         $arParams['SHOW_EMAIL'] ??= 'Y';
-
+        $arParams['CURR_ID'] ??= 0;
         return $arParams;
     }
     /**
