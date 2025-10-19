@@ -1,77 +1,81 @@
 <?php
-
-use \Bitrix\Main\Loader;
-use \Bitrix\Main\Application;
-
 if (!defined('B_PROLOG_INCLUDED') || B_PROLOG_INCLUDED !== true) die();
-
-class AnbCurrView extends CBitrixComponent
+class UserCardComponent extends CBitrixComponent
 {
-    private $_request;
-
     /**
-     * Проверка наличия модулей требуемых для работы компонента
-     * @return bool
-     * @throws Exception
-     */
-    private function _checkModules()
-    {
-        if (
-            !Loader::includeModule('iblock')
-            || !Loader::includeModule('sale')
-        ) {
-            throw new \Exception('Не загружены модули необходимые для работы модуля');
-        }
-
-        return true;
-    }
-
-    /**
-     * Обертка над глобальной переменной
-     * @return CAllMain|CMain
-     */
-    private function _app()
-    {
-        global $APPLICATION;
-        return $APPLICATION;
-    }
-
-    /**
-     * Обертка над глобальной переменной
-     * @return CAllUser|CUser
-     */
-    private function _user()
-    {
-        global $USER;
-        return $USER;
-    }
-
-    /**
-     * Подготовка параметров компонента
-     * @param $arParams
-     * @return mixed
+     * Подготавливаем входные параметры
+     *
+     * @param array $arParams
+     *
+     * @return array
      */
     public function onPrepareComponentParams($arParams)
     {
-        // тут пишем логику обработки параметров, дополнение параметрами по умолчанию
-        // и прочие нужные вещи
+        $arParams['USER_ID'] ??= 0;
+        $arParams['SHOW_EMAIL'] ??= 'Y';
+        
         return $arParams;
     }
-
     /**
-     * Точка входа в компонент
-     * Должна содержать только последовательность вызовов вспомогательых ф-ий и минимум логики
-     * всю логику стараемся разносить по классам и методам 
+     * Основной метод выполнения компонента
+     *
+     * @return void
      */
     public function executeComponent()
     {
-        $this->_checkModules();
-
-        $this->_request = Application::getInstance()->getContext()->getRequest();
-
-        // что-то делаем и результаты работы помещаем в arResult, для передачи в шаблон
-        $this->arResult['SOME_VAR'] = 'some result data for template';
-
-        $this->includeComponentTemplate();
+        // Кешируем результат, чтобы не делать постоянные запросы к базе
+        if ($this->startResultCache())
+        {
+            $this->initResult();
+            
+            // Если ничего не найдено, отменяем кеширование
+            if (empty($this->arResult))
+            {
+                $this->abortResultCache();
+                ShowError('Пользователь не найден');
+                
+                return;
+            }
+            
+            $this->includeComponentTemplate();
+        }
+    }
+    /**
+     * Инициализируем результат
+     *
+     * @return void
+     */
+    private function initResult(): void
+    {
+        $userId = (int)$this->arParams['USER_ID'];
+        if ($userId < 1)
+        {
+            return;
+        }
+        
+        $user = \Bitrix\Main\UserTable::query()
+            ->setSelect([
+                'NAME',
+                'EMAIL',
+                'PERSONAL_PHOTO',
+            ])
+            ->where('ID', $userId)
+            ->fetch()
+        ;
+        if (empty($user))
+        {
+            return;
+        }
+        $this->arResult = [
+            'NAME' => $user['NAME'],
+            'EMAIL' => $user['EMAIL'],
+        ];
+        
+        // Получаем путь до аватара, если он указан
+        if (!empty($user['PERSONAL_PHOTO']))
+        {
+            $this->arResult['PERSONAL_PHOTO_SRC'] = \CFile::GetPath($user['PERSONAL_PHOTO']);
+        }
     }
 }
+?>

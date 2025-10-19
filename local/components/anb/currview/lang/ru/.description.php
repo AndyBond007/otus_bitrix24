@@ -1,6 +1,6 @@
 <? if (!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED !== true) die();
 
-$MESS["ANB_CURRVEIW_COMPONENT_PATH_ID"] = "local";
-$MESS["ANB_CURRVEIW_COMPONENT_PATH_NAME"] = "Компоненты ANB";
-$MESS["ANB_CURRVEIW_COMPONENT"] = "Курс валюты";
-$MESS["ANB_CURRVEIW_COMPONENT_DESCRIPTION"] = "Клмпонент для отображения курса выбранной валюты";
+$MESS["ANB_CURRVIEW_COMPONENT_PATH_ID"] = "anb";
+$MESS["ANB_CURRVIEW_COMPONENT_GROUP"] = "ANB";
+$MESS["ANB_CURRVIEW_COMPONENT_NAME"] = "Вывод калюты";
+$MESS["ANB_CURRVIEW_COMPONENT_DESCRIPTION"] = "Компонент для вывода курса выбранной валюты";
