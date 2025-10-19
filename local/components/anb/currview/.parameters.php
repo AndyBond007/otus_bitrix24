@@ -16,7 +16,7 @@ $result = CurrencyTable::getList([
 $arCurrList = array();
 
 while ($currency = $result->fetch()) {
-    $arCurrList[] = $currency['CURRENCY'];
+    $arCurrList[$currency['CURRENCY']] = $currency['CURRENCY'];
 }
 // dump($arCurrList);
 
@@ -25,17 +25,8 @@ $arComponentParameters = [
         'CURR_PARAMS' => [
             'NAME' => 'Параметры отображения валюты',
         ],
-        'USER_CARD' => [
-            'NAME' => 'Параметры карточки пользователя',
-        ],
     ],
     'PARAMETERS' => [
-        // 'CURR_ID' => [
-        //     'PARENT' => 'CURR_PARAMS',
-        //     'NAME' => 'Выберите валюту',
-        //     'TYPE' => 'NUMBER',
-        // ],
-
         'CURR_ID' => [
             'PARENT' => 'CURR_PARAMS',
             'NAME' => 'Выберите валюту',
@@ -44,17 +35,6 @@ $arComponentParameters = [
             'REFRESH' => 'Y',
             "DEFAULT" => '',
             "ADDITIONAL_VALUES" => "N",
-        ],
-        'USER_ID' => [
-            'NAME' => 'Идентификатор пользователя',
-            'TYPE' => 'NUMBER',
-            'PARENT' => 'USER_CARD',
-        ],
-        'SHOW_EMAIL' => [
-            'NAME' => 'Показывать email',
-            'TYPE' => 'CHECKBOX',
-            'DEFAULT' => 'Y',
-            'PARENT' => 'USER_CARD',
         ],
     ],
 ];

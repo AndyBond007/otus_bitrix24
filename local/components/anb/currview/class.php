@@ -11,9 +11,7 @@ class CurrVewComponent extends CBitrixComponent
      */
     public function onPrepareComponentParams($arParams)
     {
-        $arParams['USER_ID'] ??= 0;
-        $arParams['SHOW_EMAIL'] ??= 'Y';
-        $arParams['CURR_ID'] ??= 0;
+        $arParams['CURR_ID'] ??= '';
         return $arParams;
     }
     /**
@@ -30,7 +28,7 @@ class CurrVewComponent extends CBitrixComponent
             // Если ничего не найдено, отменяем кеширование
             if (empty($this->arResult)) {
                 $this->abortResultCache();
-                ShowError('Пользователь не найден');
+                ShowError('Валюта не установлена');
 
                 return;
             }
@@ -45,30 +43,16 @@ class CurrVewComponent extends CBitrixComponent
      */
     private function initResult(): void
     {
-        $userId = (int)$this->arParams['USER_ID'];
-        if ($userId < 1) {
+        $curr_id = (int)$this->arParams['CURR_ID'];
+        if ($curr_id < 1) {
             return;
         }
 
-        $user = \Bitrix\Main\UserTable::query()
-            ->setSelect([
-                'NAME',
-                'EMAIL',
-                'PERSONAL_PHOTO',
-            ])
-            ->where('ID', $userId)
-            ->fetch();
-        if (empty($user)) {
-            return;
-        }
+        $curr_id = $this->arParams['CURR_ID'];
+
+
         $this->arResult = [
-            'NAME' => $user['NAME'],
-            'EMAIL' => $user['EMAIL'],
+            'CURR_ID' => $curr_id,
         ];
-
-        // Получаем путь до аватара, если он указан
-        if (!empty($user['PERSONAL_PHOTO'])) {
-            $this->arResult['PERSONAL_PHOTO_SRC'] = \CFile::GetPath($user['PERSONAL_PHOTO']);
-        }
     }
 }
