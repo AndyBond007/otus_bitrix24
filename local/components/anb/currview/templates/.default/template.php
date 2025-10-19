@@ -11,6 +11,12 @@ use Bitrix\Main\Localization\Loc;
  * @var CBitrixComponentTemplate $this
  */
 ?>
+<h1>
+    <?php if (isset($arResult['CURR_ID'])): ?>
+        <?= $arResult['CURR_ID'] ?>
+    <?php endif; ?>
+</h1>
+
 <div class="my-user-card">
     <?php if (isset($arResult['PERSONAL_PHOTO_SRC'])): ?>
         <div class="my-user-card__avatar">

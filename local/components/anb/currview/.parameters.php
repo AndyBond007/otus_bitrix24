@@ -1,6 +1,7 @@
 <?php
 if (!defined('B_PROLOG_INCLUDED') || B_PROLOG_INCLUDED !== true) die();
 
+use Bitrix\Main\Loader;
 use Bitrix\Currency\CurrencyTable;
 
 Loader::includeModule('currency');
@@ -13,10 +14,11 @@ $result = CurrencyTable::getList([
 
 // пустой массив для типов валюты 
 $arCurrList = array();
+
 while ($currency = $result->fetch()) {
     $arCurrList[] = $currency['CURRENCY'];
 }
-dump($arCurrList);
+// dump($arCurrList);
 
 $arComponentParameters = [
     'GROUPS' => [
@@ -28,17 +30,21 @@ $arComponentParameters = [
         ],
     ],
     'PARAMETERS' => [
-        'CURR_ID' => array(
+        // 'CURR_ID' => [
+        //     'PARENT' => 'CURR_PARAMS',
+        //     'NAME' => 'Выберите валюту',
+        //     'TYPE' => 'NUMBER',
+        // ],
+
+        'CURR_ID' => [
             'PARENT' => 'CURR_PARAMS',
             'NAME' => 'Выберите валюту',
             'TYPE' => 'LIST',
             'VALUES' => $arCurrList,
             'REFRESH' => 'Y',
             "DEFAULT" => '',
-            "ADDITIONAL_VALUES" => "Y",
-        ),            
+            "ADDITIONAL_VALUES" => "N",
         ],
-
         'USER_ID' => [
             'NAME' => 'Идентификатор пользователя',
             'TYPE' => 'NUMBER',
