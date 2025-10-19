@@ -18,11 +18,11 @@ $currencyData = CurrencyTable::getById($arResult['CURR_ID'])->fetch();
  */
 ?>
 
-<div class="my-user-card">
+<div class="my-curr-card">
 
     <?php if ($currencyData): ?>
-        <div class="my-user-card__email">Курс валюты <?= $currencyData['CURRENCY'] ?> </div>
-        <h2 class="my-user-card__name">
+        <div class="curr_text">Курс валюты <?= $currencyData['CURRENCY'] ?> </div>
+        <h2 class="my-curr_value">
             <?= $currencyData['AMOUNT'] ?>
 
         <?php else: ?>

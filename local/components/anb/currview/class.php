@@ -43,13 +43,10 @@ class CurrVewComponent extends CBitrixComponent
      */
     private function initResult(): void
     {
-        $curr_id = (int)$this->arParams['CURR_ID'];
-        if ($curr_id < 1) {
+        $curr_id = $this->arParams['CURR_ID'];
+        if (empty($curr_id)) {
             return;
         }
-
-        $curr_id = $this->arParams['CURR_ID'];
-
 
         $this->arResult = [
             'CURR_ID' => $curr_id,
