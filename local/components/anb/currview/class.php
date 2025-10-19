@@ -1,6 +1,6 @@
 <?php
 if (!defined('B_PROLOG_INCLUDED') || B_PROLOG_INCLUDED !== true) die();
-class UserCardComponent extends CBitrixComponent
+class CurrVewComponent extends CBitrixComponent
 {
     /**
      * Подготавливаем входные параметры
@@ -13,7 +13,7 @@ class UserCardComponent extends CBitrixComponent
     {
         $arParams['USER_ID'] ??= 0;
         $arParams['SHOW_EMAIL'] ??= 'Y';
-        
+
         return $arParams;
     }
     /**
@@ -24,19 +24,17 @@ class UserCardComponent extends CBitrixComponent
     public function executeComponent()
     {
         // Кешируем результат, чтобы не делать постоянные запросы к базе
-        if ($this->startResultCache())
-        {
+        if ($this->startResultCache()) {
             $this->initResult();
-            
+
             // Если ничего не найдено, отменяем кеширование
-            if (empty($this->arResult))
-            {
+            if (empty($this->arResult)) {
                 $this->abortResultCache();
                 ShowError('Пользователь не найден');
-                
+
                 return;
             }
-            
+
             $this->includeComponentTemplate();
         }
     }
@@ -48,11 +46,10 @@ class UserCardComponent extends CBitrixComponent
     private function initResult(): void
     {
         $userId = (int)$this->arParams['USER_ID'];
-        if ($userId < 1)
-        {
+        if ($userId < 1) {
             return;
         }
-        
+
         $user = \Bitrix\Main\UserTable::query()
             ->setSelect([
                 'NAME',
@@ -60,22 +57,18 @@ class UserCardComponent extends CBitrixComponent
                 'PERSONAL_PHOTO',
             ])
             ->where('ID', $userId)
-            ->fetch()
-        ;
-        if (empty($user))
-        {
+            ->fetch();
+        if (empty($user)) {
             return;
         }
         $this->arResult = [
             'NAME' => $user['NAME'],
             'EMAIL' => $user['EMAIL'],
         ];
-        
+
         // Получаем путь до аватара, если он указан
-        if (!empty($user['PERSONAL_PHOTO']))
-        {
+        if (!empty($user['PERSONAL_PHOTO'])) {
             $this->arResult['PERSONAL_PHOTO_SRC'] = \CFile::GetPath($user['PERSONAL_PHOTO']);
         }
     }
 }
-?>

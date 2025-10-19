@@ -2,5 +2,5 @@
 
 $MESS["ANB_CURRVIEW_COMPONENT_PATH_ID"] = "anb";
 $MESS["ANB_CURRVIEW_COMPONENT_GROUP"] = "ANB";
-$MESS["ANB_CURRVIEW_COMPONENT_NAME"] = "Вывод калюты";
+$MESS["ANB_CURRVIEW_COMPONENT_NAME"] = "Вывод валюты";
 $MESS["ANB_CURRVIEW_COMPONENT_DESCRIPTION"] = "Компонент для вывода курса выбранной валюты";
